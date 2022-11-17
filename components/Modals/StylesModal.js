@@ -1,14 +1,13 @@
 import { StyleSheet } from "react-native";
+import colors from "../../constants/colors";
 
 const StylesModal = StyleSheet.create({
   modalContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    // marginTop: 300,
-    backgroundColor: "#fff",
     padding: 40,
-    borderColor: "#79B6FC",
+    borderColor: colors.azul,
     borderEndWidth: 4,
     borderStartWidth: 4,
     borderTopWidth: 4,
@@ -29,7 +28,7 @@ const StylesModal = StyleSheet.create({
     justifyContent: "space-around",
   },
   button: {
-    backgroundColor: "#A1D6B7",
+    backgroundColor: colors.buttonColor2,
     margin:10,
     padding:10,
     borderRadius: 10,

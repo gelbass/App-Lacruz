@@ -1,13 +1,19 @@
 import { StyleSheet } from "react-native";
+import colors from "../../constants/colors";
 
 const StylesHeader = StyleSheet.create({
   header:{
-    justifyContent: "center",
-    alignItems: "center"
+    width: "100%",
+    height: 68,
+    padding: 10,
+    justifyContent: "flex-end",
+    alignItems: "center",
+    backgroundColor: colors.primario,
   },
   titulo: {
-    fontWeight: 'bold',
-    fontSize: 30
+    fontSize: 20,
+    fontStyle:"normal",
+    color: colors.blanco,
   }
 })
 export default StylesHeader;

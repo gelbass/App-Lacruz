@@ -2,12 +2,10 @@ import { Image, Text, View } from "react-native";
 
 import StylesHeader from "./StylesHeader";
 
-const Header = () =>{
+const Header = ({newStyles, text}) =>{
   return(
-    <View style={style.header}>
-      <Image source={require("../../img/Cesta.jpg")}/>
-      <Text style={style.titulo}>Lista de compras</Text>
-
+    <View style={{...style.header}}>
+      <Text style={{...style.titulo, ...newStyles}}>{text}</Text>
     </View>
   );
 };
